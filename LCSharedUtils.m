@@ -110,7 +110,7 @@ extern NSBundle *lcMainBundle;
         NSURLRequest* req = [[NSURLRequest alloc] initWithURL:launchJITUrl];
         NSURLSessionDataTask *task = [session dataTaskWithRequest:req completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
             if(error) {
-                NSLog(@"[LC] failed to contact SideJITServer: %@", error);
+                NSLog(@"[LC] 无法连接SideJITServer: %@", error);
             }
         }];
         [task resume];
