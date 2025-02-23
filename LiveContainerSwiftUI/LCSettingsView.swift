@@ -256,15 +256,15 @@ struct LCSettingsView: View {
                             Text("lc.settings.injectLCItself".loc)
                         }
                         Toggle(isOn: $ignoreJITOnLaunch) {
-                            Text("Ignore JIT on Launching App")
+                            Text("在启动应用时忽略JIT")
                         }
                         Button {
                             export()
                         } label: {
-                            Text("export cert")
+                            Text("导出证书")
                         }
                     } header: {
-                        Text("Developer Settings")
+                        Text("开发者设置")
                     } footer: {
                         Text("lc.settings.injectLCItselfDesc".loc)
                     }
@@ -680,12 +680,12 @@ struct LCSettingsView: View {
             let destinationURL = documentsURL.appendingPathComponent("embedded.mobileprovision")
             do {
                 try fileManager.copyItem(at: embeddedURL, to: destinationURL)
-                print("Successfully copied embedded.mobileprovision to Documents.")
+                print("成功将embedded.mobileprovision复制到Documents")
             } catch {
-                print("Error copying embedded.mobileprovision: \(error)")
+                print("复制embedded.mobileprovision时出错: \(error)")
             }
         } else {
-            print("embedded.mobileprovision not found in the main bundle.")
+            print("在安装目录中找不到embedded.mobileprovision")
         }
         
         // 2. Read "certData" from UserDefaults and save to cert.p12 in Documents
@@ -693,12 +693,12 @@ struct LCSettingsView: View {
             let certFileURL = documentsURL.appendingPathComponent("cert.p12")
             do {
                 try certData.write(to: certFileURL)
-                print("Successfully wrote certData to cert.p12 in Documents.")
+                print("成功将证书数据写入Documents中的cert.p12")
             } catch {
-                print("Error writing certData to cert.p12: \(error)")
+                print("将证书数据写入cert.p12时出错: \(error)")
             }
         } else {
-            print("certData not found in UserDefaults.")
+            print("在UserDefaults中找不到证书数据")
         }
         
         // 3. Read "certPassword" from UserDefaults and save to pass.txt in Documents
@@ -706,12 +706,12 @@ struct LCSettingsView: View {
             let passwordFileURL = documentsURL.appendingPathComponent("pass.txt")
             do {
                 try certPassword.write(to: passwordFileURL, atomically: true, encoding: .utf8)
-                print("Successfully wrote certPassword to pass.txt in Documents.")
+                print("在Documents中成功将证书密码写入pass.txt")
             } catch {
-                print("Error writing certPassword to pass.txt: \(error)")
+                print("将证书密码写入pass.txt时出错: \(error)")
             }
         } else {
-            print("certPassword not found in UserDefaults.")
+            print("在UserDefaults中找不到证书密码")
         }
     }
 }
