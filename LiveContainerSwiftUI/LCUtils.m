@@ -127,7 +127,7 @@ Class LCSharedUtilsClass = nil;
     NSDirectoryEnumerator *countEnumerator = [[NSFileManager defaultManager] enumeratorAtURL:appURL includingPropertiesForKeys:@[NSURLIsRegularFileKey, NSURLFileSizeKey]
     options:0 errorHandler:^BOOL(NSURL * _Nonnull url, NSError * _Nonnull error) {
         if (error) {
-            NSLog(@"[Error] %@ (%@)", error, url);
+            NSLog(@"[错误] %@ (%@)", error, url);
             return NO;
         }
         return YES;
@@ -154,7 +154,7 @@ Class LCSharedUtilsClass = nil;
                     struct linkedit_data_command *csCommand = (struct linkedit_data_command *)command;
                     void *csData = (void *)((uint8_t *)header + csCommand->dataoff);
                     // Nuke it.
-                    NSLog(@"Removing code signature of %@", fileURL);
+                    NSLog(@"正在删除%@的代码签名", fileURL);
                     bzero(csData, csCommand->datasize);
                     break;
                 }
@@ -162,7 +162,7 @@ Class LCSharedUtilsClass = nil;
             }
         });
         if (error) {
-            NSLog(@"[Error] %@ (%@)", error, fileURL);
+            NSLog(@"[错误] %@ (%@)", error, fileURL);
         }
     }
 }
@@ -219,7 +219,7 @@ Class LCSharedUtilsClass = nil;
         return nil;
     }
 
-    NSLog(@"[LC] starting signing...");
+    NSLog(@"[LC] 开始签名...");
     
     NSProgress* ans = [NSClassFromString(@"ZSigner") signWithAppPath:[path path] prov:profileData key: self.certificateData pass:self.certificatePassword completionHandler:completionHandler];
     
