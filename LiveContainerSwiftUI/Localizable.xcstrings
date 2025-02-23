@@ -13,7 +13,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "添加到主屏幕"
+            "value" : "添加到桌面上"
           }
         }
       }
@@ -98,7 +98,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "你希望删除%@的数据吗？你可以保留以便以后使用"
+            "value" : "你希望删除%@的数据吗？你可以保留方便以后使用"
           }
         }
       }
@@ -251,7 +251,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "请为LiveContainer启用JIT。"
+            "value" : "请为LiveContainer启用JIT"
           }
         }
       }
@@ -268,7 +268,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "等待JIT"
+            "value" : "正在等待JIT"
           }
         }
       }
@@ -377,7 +377,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "未找到App包。"
+            "value" : "未找到App包"
           }
         }
       }
@@ -445,7 +445,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "读取Info.plist失败。"
+            "value" : "读取Info.plist失败"
           }
         }
       }
@@ -496,7 +496,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "已有相同包名的App存在。请从下列App中选择一个替换或安装为新App。"
+            "value" : "已有相同包名的App存在，请从下列App中选择一个替换或安装为新App"
           }
         }
       }
@@ -530,7 +530,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "无法读取IPA。"
+            "value" : "无法读取IPA"
           }
         }
       }
@@ -564,7 +564,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "App"
+            "value" : "我的应用"
           }
         }
       }
@@ -598,7 +598,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "协议“%@”无法被LiveContainer中安装的任何App打开。"
+            "value" : "协议“%@”无法被LiveContainer中安装的任何App打开"
           }
         }
       }
@@ -615,7 +615,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "App签名成功，但以下文件签名失败。App有可能可以正常运行。"
+            "value" : "App签名成功，但以下文件签名失败。App应该可以正常运行"
           }
         }
       }
@@ -632,7 +632,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "输入的链接无效，请检查后重试。"
+            "value" : "输入的链接无效，请检查后重试"
           }
         }
       }
@@ -700,7 +700,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "此App的数据当前在%@中。打开%@至App界面后再试。"
+            "value" : "此App的数据当前在%@中。打开%@至App界面后再试"
           }
         }
       }
@@ -751,7 +751,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "可能解决一些游戏崩溃的问题，但可能使得游戏变得不稳定。"
+            "value" : "可能解决一些游戏崩溃的问题，但可能使得游戏变得不稳定"
           }
         }
       }
@@ -802,7 +802,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "如果App启动时黑屏，并在10秒后崩溃，启用这个选项。"
+            "value" : "如果App启动时黑屏，并在10秒后崩溃，启用这个选项"
           }
         }
       }
@@ -853,7 +853,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "若导入文件时点击“打开”没有反应，可启用本选项。启用后所有导入的文件会被复制到App数据文件夹的Inbox目录下。"
+            "value" : "若导入文件时点击“打开”没有反应，可启用本选项。启用后所有导入的文件会被复制到App数据文件夹的Inbox目录下"
           }
         }
       }
@@ -887,7 +887,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "如果App启动时的报错包含“Invalid Signature”，则可以尝试强制重新签名。如果仍然报错，则可能需要刷新免JIT证书。"
+            "value" : "如果App启动时的报错包含“Invalid Signature”，则可以尝试强制重新签名。如果仍然报错，则可能需要刷新免JIT证书"
           }
         }
       }
@@ -921,7 +921,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "要完全隐藏App，请在设置中启用严格隐藏模式。"
+            "value" : "要完全隐藏App，请在设置中启用严格隐藏模式"
           }
         }
       }
@@ -989,7 +989,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "在启动App前LiveContainer会尝试获取JIT权限。"
+            "value" : "在启动App前LiveContainer会尝试获取JIT权限"
           }
         }
       }
@@ -1108,7 +1108,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "将App此转换为私有App允许您在文件App中访问其数据和模块，但它不能由其他LiveContainers运行。"
+            "value" : "将App此转换为私有App允许您在文件App中访问其数据和模块，但它不能由其他LiveContainers运行"
           }
         }
       }
@@ -1142,7 +1142,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "将此App移动到AppGroup以允许其他LiveContainers运行此App，并保留其所有数据和模块。如果你想访问它的数据和模块，请将其转换为私有App。"
+            "value" : "将此App移动到AppGroup以允许其他LiveContainers运行此App，并保留其所有数据和模块。如果你想访问它的数据和模块，请将其转换为私有App"
           }
         }
       }
@@ -1193,7 +1193,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "通过使用LiveContainer的包名解决上述问题。"
+            "value" : "通过使用LiveContainer的包名解决上述问题"
           }
         }
       }
@@ -1414,7 +1414,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "加载中…"
+            "value" : "正在加载..."
           }
         }
       }
@@ -1635,7 +1635,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "当没有指定容器时，LiveContainer会使用默认容器。"
+            "value" : "当没有指定容器时，LiveContainer会使用默认容器"
           }
         }
       }
@@ -1703,7 +1703,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "容器当前正在被%@使用。"
+            "value" : "容器当前正在被%@使用"
           }
         }
       }
@@ -1737,7 +1737,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "无法分配空闲的钥匙串访问组。"
+            "value" : "无法分配空闲的钥匙串访问组"
           }
         }
       }
@@ -1839,7 +1839,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "无未使用的数据文件夹。"
+            "value" : "无未使用的数据文件夹"
           }
         }
       }
@@ -1890,7 +1890,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "不能添加超过3个容器。"
+            "value" : "不能添加超过3个容器"
           }
         }
       }
@@ -1941,7 +1941,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "未找到App %@。"
+            "value" : "未找到App %@"
           }
         }
       }
@@ -1992,7 +1992,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "打开网页并打开App需要先终止当前App，要继续吗？若App支持，你也可以在当前App内打开。"
+            "value" : "打开网页并打开App需要先终止当前App，要继续吗？若App支持，你也可以在当前App内打开"
           }
         }
       }
@@ -2009,7 +2009,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "在设置中配置免JIT模式(打补丁)来使得LiveContainer无需JIT权限即可使用。\n\n**如果配置免JIT模式时遇到问题，请查看免JIT模式诊断页面。**\n\n点击加号按钮来安装App。\n\n长按App可查看App设置，修复App问题，以及将App添加到主屏幕。"
+            "value" : "在设置中配置免JIT模式(打补丁)来使得LiveContainer无需JIT权限即可使用。\n\n**如果配置免JIT模式时遇到问题，请查看免JIT模式诊断页面。**\n\n点击加号按钮来安装App。\n\n长按App可查看App设置，修复App问题，以及将App添加到桌面上"
           }
         }
       }
@@ -2026,7 +2026,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**遇到问题时请先查看[LiveContainer常见问题（英语）](https://github.com/khanhduytran0/LiveContainer/issues/265)。**\n                         \n如果你遇到Bug或者App兼容性问题，请到[GitHub issues](https://github.com/khanhduytran0/LiveContainer/issues)提交。"
+            "value" : "**遇到问题时请先查看[LiveContainer常见问题（英语）](https://github.com/khanhduytran0/LiveContainer/issues/265)。**\n                         \n如果你遇到Bug或者App兼容性问题，请到[GitHub issues](https://github.com/khanhduytran0/LiveContainer/issues)提交"
           }
         }
       }
@@ -2213,7 +2213,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "无获取到证书信息，请在SideStore/AltStore刷新后再试。"
+            "value" : "无获取到证书信息，请在SideStore/AltStore刷新后再试"
           }
         }
       }
@@ -2230,7 +2230,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "无获取到证书密码。"
+            "value" : "无获取证书密码"
           }
         }
       }
@@ -2247,7 +2247,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "执行签名测试时出现问题。"
+            "value" : "执行签名测试时出现问题"
           }
         }
       }
@@ -2264,7 +2264,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "无法加载测试动态链接库，这可能是由于证书出现问题。请尝试：1. 重新打开%@；2. 刷新%@；3. 如果仍有问题，请尝试重新给%@打补丁。"
+            "value" : "无法加载测试动态链接库，这可能是由于证书出现问题。请尝试：1. 重新打开%@；2. 刷新%@；3. 如果仍有问题，请尝试重新给%@打补丁"
           }
         }
       }
@@ -2281,7 +2281,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "免JIT模式测试通过。"
+            "value" : "免JIT模式测试通过"
           }
         }
       }
@@ -2332,7 +2332,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "移动完成。"
+            "value" : "移动完成"
           }
         }
       }
@@ -2349,7 +2349,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "共享的AppGroup文件夹中不为空。将其中文件移动出来后再试。"
+            "value" : "共享的AppGroup文件夹中不为空，将其中文件移动出来后再试"
           }
         }
       }
@@ -2366,7 +2366,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "私有的AppGroup文件夹中不为空。将其中文件移动出来后再试。"
+            "value" : "私有的AppGroup文件夹中不为空，将其中文件移动出来后再试"
           }
         }
       }
@@ -2492,7 +2492,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "某些App的账户不能在LiveContainer间同步的原因可能是其Keychain还存储在本地。清理Keychain可能能解决此问题，但可能会导致你登出某些账户。要继续吗？"
+            "value" : "某些App的账户不能在LiveContainer间同步的原因可能是其Keychain还存储在本地。清理Keychain可能能解决此问题，但可能会导致你登出某些账户。是否继续？"
           }
         }
       }
@@ -2560,7 +2560,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "在设测试JIT模式前，你必须要先给%@打补丁。"
+            "value" : "在测试JIT模式前，你必须要先给%@打补丁"
           }
         }
       }
@@ -2594,7 +2594,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "在App图标外加LiveContainer图标边框。"
+            "value" : "在App图标外加LiveContainer图标边框"
           }
         }
       }
@@ -2628,7 +2628,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "启用后，LiveContainer自身会加载全局模块文件夹中的模块。"
+            "value" : "启用后，LiveContainer自身会加载全局模块文件夹中的模块"
           }
         }
       }
@@ -2679,7 +2679,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "配置SideJITServer/JITStreamer。需要本地网络权限。"
+            "value" : "配置SideJITServer/JITStreamer需要本地网络权限"
           }
         }
       }
@@ -2713,7 +2713,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "配置免JIT模式后，LiveContainer无需JIT即可使用。给SideStore或AltStore打补丁后即可使用。"
+            "value" : "配置免JIT模式后，LiveContainer无需JIT即可使用，给SideStore或AltStore打补丁后即可使用"
           }
         }
       }
@@ -2806,7 +2806,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "移动了 %#@arg1@和 %#@arg2@。"
+            "value" : "移动了 %#@arg1@和 %#@arg2@"
           },
           "substitutions" : {
             "arg1" : {
@@ -2899,7 +2899,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "通过安装多个LiveContainer，并将App变为共享App，你可以在这些LiveContainer间共享安装的App及其数据，并同时运行多个App。"
+            "value" : "通过安装多个LiveContainer，并将App变为共享App，你可以在这些LiveContainer间共享安装的App及其数据，并同时运行多个App"
           }
         }
       }
@@ -2967,7 +2967,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "未删除任何数据文件夹，所有文件夹都已被使用。"
+            "value" : "未删除任何数据文件夹，所有文件夹都已被使用"
           }
         }
       }
@@ -3035,7 +3035,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "打包的%@已经保存到LiveContainer的“文件”文件夹，请将其手动安装到安装了LiveContainer的那个%@中。"
+            "value" : "打包的%@已经保存到LiveContainer的“文件”文件夹，请将其手动安装到安装了LiveContainer的那个%@中"
           }
         }
       }
@@ -3069,7 +3069,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "如果你安装了多个SideStore，请选择“仅打包”并手动安装打过补丁的IPA。"
+            "value" : "如果你安装了多个SideStore，请选择“仅打包”并手动安装打过补丁的IPA"
           }
         }
       }
@@ -3103,7 +3103,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "若ZSign签名遇到问题，可尝试使用AltSign。切换签名工具后请重启LiveContainer。"
+            "value" : "若ZSign签名遇到问题，可尝试使用AltSign。切换签名工具后请重启LiveContainer"
           }
         }
       }
@@ -3137,7 +3137,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "如果App重新签名过于频繁，可尝试启用此项。"
+            "value" : "如果App重新签名过于频繁，可尝试启用此项"
           }
         }
       }
@@ -3171,7 +3171,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "LiveContainer在打开链接时会询问你如何打开。启用此选项来自动在当前App中打开。"
+            "value" : "LiveContainer在打开链接时会询问你如何打开。启用此选项来自动在当前App中打开"
           }
         }
       }
@@ -3205,7 +3205,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "LiveContainer在切换App时默认会向你确认。启用此选项来静默切换，所有未保存的数将会丢失。"
+            "value" : "LiveContainer在切换App时默认会向你确认。启用此选项来静默切换，所有未保存的数将会丢失"
           }
         }
       }
@@ -3239,7 +3239,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "启用后，将只能从App选择界面启动App。"
+            "value" : "启用后，将只能从App选择界面启动App"
           }
         }
       }
@@ -3273,7 +3273,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "安装方式不受支持。请使用SideStore或AltStore安装来使用此功能。"
+            "value" : "安装方式不支持，请使用SideStore或AltStore安装来使用此功能"
           }
         }
       }
@@ -3290,7 +3290,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "请勿将LiveContainer用于盗版。"
+            "value" : "请勿将LiveContainer用于盗版"
           }
         }
       }
@@ -3307,7 +3307,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "App"
+            "value" : "应用程序"
           }
         }
       }
@@ -3358,7 +3358,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "这是App专用文件夹。将App的模块文件夹设置为本文件夹，则App在启动时会递归地加载。"
+            "value" : "这是App专用文件夹。将App的模块文件夹设置为本文件夹，则App在启动时会递归地加载"
           }
         }
       }
@@ -3375,7 +3375,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "这是全局文件夹，这里的全部模块会被加载到所有App中。要为App单独加载模块，请新建文件夹。"
+            "value" : "这是全局文件夹，这里的全部模块会被加载到所有App中。要为App单独加载模块，请新建文件夹"
           }
         }
       }
@@ -3426,7 +3426,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@不是一个文件。"
+            "value" : "%@不是一个文件"
           }
         }
       }
@@ -3443,7 +3443,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "无法打开%@，权限不足。"
+            "value" : "无法打开%@，权限不足"
           }
         }
       }
@@ -3477,7 +3477,7 @@
         "zh_CN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "需要授权。"
+            "value" : "需要授权"
           }
         }
       }
