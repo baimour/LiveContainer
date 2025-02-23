@@ -243,11 +243,11 @@ struct AppPreferencePageView : View {
         var children : [AnyView] = []
         self.preferencePlistURL = preferencePlistURL
         guard let dict = NSMutableDictionary(contentsOf: preferencePlistURL) else {
-            errorInfo = "Failed to load preference."
+            errorInfo = "加载偏好设置失败"
             return
         }
         guard let items = dict["PreferenceSpecifiers"] as? [[String:Any]] else {
-            errorInfo = "Failed to load preference."
+            errorInfo = "加载偏好设置失败"
             return
         }
         let suiteName = dict["ApplicationGroupContainerIdentifier"] as? String ?? bundleId
