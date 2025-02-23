@@ -79,7 +79,7 @@ struct LCTabView: View {
                 tempTweakFolderNames.append(tweakDir)
             }
         } catch {
-            NSLog("[LC] error:\(error)")
+            NSLog("[LC] 错误:\(error)")
         }
         DataManager.shared.model.apps = tempApps
         DataManager.shared.model.hiddenApps = tempHiddenApps
