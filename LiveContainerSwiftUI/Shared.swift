@@ -682,7 +682,7 @@ extension LCUtils {
         case .SideStore:
             return "SideStore"
         default:
-            return "Unknown Store"
+            return "未知商店"
         }
     }
     
@@ -694,7 +694,7 @@ extension LCUtils {
           ] as CFDictionary)
           if status != errSecSuccess && status != errSecItemNotFound {
               //Error while removing class $0
-              NSLog("[LC] Failed to find keychain items: \(status)")
+              NSLog("[LC] 无法找到钥匙串项目: \(status)")
           }
         }
     }
