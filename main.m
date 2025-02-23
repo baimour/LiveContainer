@@ -224,7 +224,7 @@ static NSString* invokeAppMain(NSString *selectedApp, NSString *selectedContaine
             usleep(1000*100);
         }
         if (!checkJITEnabled()) {
-            appError = @"JIT was not enabled. If you want to use LiveContainer without JIT, setup JITLess mode in settings.";
+            appError = @"JIT未启用，如果您想在没有JIT的情况下使用LiveContainer，请在设置中设置JITLess模式";
             return appError;
         }
     }
@@ -250,7 +250,7 @@ static NSString* invokeAppMain(NSString *selectedApp, NSString *selectedContaine
     guestAppInfo = [NSDictionary dictionaryWithContentsOfURL:[appBundle URLForResource:@"LCAppInfo" withExtension:@"plist"]];
     
     if(!appBundle) {
-        return @"App not found";
+        return @"找不到应用程序";
     }
     
     // find container in Info.plist
@@ -260,7 +260,7 @@ static NSString* invokeAppMain(NSString *selectedApp, NSString *selectedContaine
     }
 
     if(dataUUID == nil) {
-        return @"Container not found!";
+        return @"找不到容器！";
     }
     
     if(isSharedBundle) {
@@ -367,7 +367,7 @@ static NSString* invokeAppMain(NSString *selectedApp, NSString *selectedContaine
     
     if([guestAppInfo[@"fixBlackScreen"] boolValue]) {
         dlopen("/System/Library/Frameworks/UIKit.framework/UIKit", RTLD_GLOBAL);
-        NSLog(@"[LC] Fix BlackScreen2 %@", [NSClassFromString(@"UIScreen") mainScreen]);
+        NSLog(@"[LC] 修复黑屏2: %@", [NSClassFromString(@"UIScreen") mainScreen]);
     }
 
     setenv("CFFIXED_USER_HOME", newHomePath.UTF8String, 1);
@@ -430,27 +430,27 @@ static NSString* invokeAppMain(NSString *selectedApp, NSString *selectedContaine
 
     if (![appBundle loadAndReturnError:&error]) {
         appError = error.localizedDescription;
-        NSLog(@"[LCBootstrap] loading bundle failed: %@", error);
+        NSLog(@"[LCBootstrap] 加载包失败: %@", error);
         *path = oldPath;
         return appError;
     }
-    NSLog(@"[LCBootstrap] loaded bundle");
+    NSLog(@"[LCBootstrap] 已加载包");
 
     // Find main()
     appMain = getAppEntryPoint(appHandle, appIndex);
     if (!appMain) {
-        appError = @"Could not find the main entry point";
+        appError = @"找不到主要入口";
         NSLog(@"[LCBootstrap] %@", appError);
         *path = oldPath;
         return appError;
     }
 
     // Go!
-    NSLog(@"[LCBootstrap] jumping to main %p", appMain);
+    NSLog(@"[LCBootstrap] 正在跳到主%p", appMain);
     argv[0] = (char *)appExecPath;
     int ret = appMain(argc, argv);
 
-    return [NSString stringWithFormat:@"App returned from its main function with code %d.", ret];
+    return [NSString stringWithFormat:@"应用程序从其主功能返回，代码为: %d", ret];
 }
 
 static void exceptionHandler(NSException *exception) {
@@ -460,7 +460,7 @@ static void exceptionHandler(NSException *exception) {
 
 int LiveContainerMain(int argc, char *argv[]) {
     // This strangely fixes some apps getting stuck on black screen
-    NSLog(@"Ignore this: %@", dispatch_get_main_queue());
+    NSLog(@"忽略这个: %@", dispatch_get_main_queue());
 
     lcMainBundle = [NSBundle mainBundle];
     lcUserDefaults = NSUserDefaults.standardUserDefaults;
