@@ -54,7 +54,7 @@ struct LCTweakFolderView : View {
             }
             _tweakItems = State(initialValue: tmpTweakItems)
         } catch {
-            NSLog("[LC] failed to load tweaks \(error.localizedDescription)")
+            NSLog("[LC] 加载插件失败: \(error.localizedDescription)")
             _errorShow = State(initialValue: true)
             _errorInfo = State(initialValue: error.localizedDescription)
             _tweakItems = State(initialValue: [])
