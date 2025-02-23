@@ -13,25 +13,25 @@ static NSString *loadTweakAtURL(NSURL *url) {
     void *handle = dlopen(tweakPath.UTF8String, RTLD_LAZY | RTLD_GLOBAL);
     const char *error = dlerror();
     if (handle) {
-        NSLog(@"Loaded tweak %@", tweak);
+        NSLog(@"已加载插件: %@", tweak);
         return nil;
     } else if (error) {
-        NSLog(@"Error: %s", error);
+        NSLog(@"错误: %s", error);
         return @(error);
     } else {
-        NSLog(@"Error: dlopen(%@): Unknown error because dlerror() returns NULL", tweak);
-        return [NSString stringWithFormat:@"dlopen(%@): unknown error, handle is NULL", tweakPath];
+        NSLog(@"错误: dlopen(%@): 未知错误，因为dlerror() 返回NULL", tweak);
+        return [NSString stringWithFormat:@"dlopen(%@): 未知错误，句柄为NULL", tweakPath];
     }
 }
 
 static void showDlerrAlert(NSString *error) {
     UIWindow *window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Failed to load tweaks" message:error preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction* okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"加载插件失败" message:error preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* okAction = [UIAlertAction actionWithTitle:@"好" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
         window.windowScene = nil;
     }];
     [alert addAction:okAction];
-    UIAlertAction* cancelAction = [UIAlertAction actionWithTitle:@"Copy" style:UIAlertActionStyleCancel handler:^(UIAlertAction * action) {
+    UIAlertAction* cancelAction = [UIAlertAction actionWithTitle:@"复制" style:UIAlertActionStyleCancel handler:^(UIAlertAction * action) {
         UIPasteboard.generalPasteboard.string = error;
         window.windowScene = nil;
     }];
@@ -60,7 +60,7 @@ static void TweakLoaderConstructor() {
     }
 
     // Load global tweaks
-    NSLog(@"Loading tweaks from the global folder");
+    NSLog(@"正在从全局文件夹加载插件");
     NSArray<NSURL *> *globalTweaks = [NSFileManager.defaultManager contentsOfDirectoryAtURL:[NSURL fileURLWithPath:globalTweakFolder]
     includingPropertiesForKeys:@[] options:0 error:nil];
     for (NSURL *fileURL in globalTweaks) {
@@ -73,11 +73,11 @@ static void TweakLoaderConstructor() {
     // Load selected tweak folder, recursively
     NSString *tweakFolderName = NSUserDefaults.guestAppInfo[@"LCTweakFolder"];
     if (tweakFolderName.length > 0) {
-        NSLog(@"Loading tweaks from the selected folder");
+        NSLog(@"正在从所选文件夹加载插件");
         NSString *tweakFolder = [globalTweakFolder stringByAppendingPathComponent:tweakFolderName];
         NSURL *tweakFolderURL = [NSURL fileURLWithPath:tweakFolder];
         NSDirectoryEnumerator *directoryEnumerator = [NSFileManager.defaultManager enumeratorAtURL:tweakFolderURL includingPropertiesForKeys:@[] options:0 errorHandler:^BOOL(NSURL *url, NSError *error) {
-            NSLog(@"Error while enumerating tweak directory: %@", error);
+            NSLog(@"枚举插件目录时出错: %@", error);
             return YES;
         }];
         for (NSURL *fileURL in directoryEnumerator) {
