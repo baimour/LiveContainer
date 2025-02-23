@@ -1,8 +1,8 @@
 #!/bin/bash
 if [ -d "$THEOS/lib/OpenSSL.framework" ]; then
-	echo "OpenSSL.framework already exists in $THEOS/lib"
+	echo "OpenSSL.framework已存在于$THEOS/lib"
 else
-	echo "OpenSSL.framework not found. Downloading..."
+	echo "未找到OpenSSL.framework，正在下载..."
 
 	curl -L "https://github.com/HAHALOSAH/OpenSSL-Swift/releases/download/3.1.5004/OpenSSL.xcframework.zip" -o "OpenSSL.xcframework.zip"
 
