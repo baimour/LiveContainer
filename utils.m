@@ -1,7 +1,7 @@
 #import "utils.h"
 
 void __assert_rtn(const char* func, const char* file, int line, const char* failedexpr) {
-    [NSException raise:NSInternalInconsistencyException format:@"Assertion failed: (%s), file %s, line %d.\n", failedexpr, file, line];
+    [NSException raise:NSInternalInconsistencyException format:@"断言失败: (%s), 文件: %s, 行: %d\n", failedexpr, file, line];
     abort(); // silent compiler warning
 }
 
