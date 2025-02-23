@@ -91,7 +91,7 @@
     } else if (_infoPlist[@"CFBundleExecutable"]) {
         return _infoPlist[@"CFBundleExecutable"];
     } else {
-        return @"App Corrupted, Please Reinstall This App";
+        return @"应用程序已损坏，请重新安装此应用";
     }
 }
 
@@ -103,7 +103,7 @@
     if(version) {
         return version;
     } else {
-        return @"Unknown";
+        return @"未知";
     }
 }
 
@@ -117,7 +117,7 @@
     if(ans) {
         return ans;
     } else {
-        return @"Unknown";
+        return @"未知";
     }
 }
 
@@ -263,7 +263,7 @@
     NSMutableDictionary *info = _info;
     NSMutableDictionary *infoPlist = _infoPlist;
     if (!info) {
-        completetionHandler(NO, @"Info.plist not found");
+        completetionHandler(NO, @"未找到Info.plist");
         return;
     }
     
@@ -306,7 +306,7 @@
         CC_SHA1(LCUtils.certificateData.bytes, (CC_LONG)LCUtils.certificateData.length, digest);
         signID = *(uint64_t *)digest + signRevision;
     } else {
-        completetionHandler(NO, @"Failed to find signing certificate. Please refresh your store and try again.");
+        completetionHandler(NO, @"找不到签名证书。请刷新您的商店，然后重试");
         return;
     }
     
@@ -537,7 +537,7 @@
         NSData *colorData = [NSKeyedArchiver archivedDataWithRootObject:color requiringSecureCoding:YES error:&error];
         [_info setObject:colorData forKey:@"cachedColor"];
         if(error) {
-            NSLog(@"[LC] failed to set color %@", error);
+            NSLog(@"[LC] 设置颜色失败: %@", error);
         }
 
     }
